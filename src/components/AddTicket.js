@@ -44,7 +44,7 @@ const AddTicket = ({ addTask, len }) => {
 					id="description"
 					value={description}
 					onChange={(e) => setDescription(e.target.value)}
-				></textarea>
+				/>
 			</div>
 			<input type="submit" value="Save Ticket" className="btn btn-block" />
 		</form>

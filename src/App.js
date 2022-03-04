@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import Header from "./components/Header";
 import Tickets from "./components/Tickets";
 import { ticketsData } from "./mock/data";
+import logo from "./svg/loading.svg";
 
 function App() {
 	const [edge, setEdge] = useState(0);
@@ -18,7 +19,7 @@ function App() {
 			setTickets(ticketsData.slice(0, 3));
 			setEdge(edge + 3);
 			setIsLoading(false);
-		}, 2000);
+		}, 1000);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
@@ -47,7 +48,7 @@ function App() {
 			]);
 			setEdge(edge + 3);
 			setIsLoading(false);
-		}, 2000);
+		}, 1000);
 	};
 
 	return (
@@ -59,12 +60,15 @@ function App() {
 			/>
 			{showAddTicket && <AddTicket addTask={addTicket} len={tickets.length} />}
 			{isLoading && tickets.length === 0 ? (
-				"Loading..."
+				<div className="loading-wrapper">
+					<img src={logo} width="40" alt="loading" />
+				</div>
 			) : (
 				<Tickets tickets={tickets} deleteTicket={deleteTicket} />
 			)}
 			{tickets.length !== 0 && tickets.length < ticketsData.length ? (
 				<Button
+					classes={"btn-block mt-3"}
 					isDisabled={isLoading}
 					isLoading={isLoading}
 					color="gray"

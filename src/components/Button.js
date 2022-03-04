@@ -1,19 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
+import loading from "../svg/loading.svg";
 
-const Button = ({ color, text, isDisabled, isLoading, btnClickHandler }) => {
+const Button = ({
+	color,
+	text,
+	isDisabled,
+	isLoading,
+	btnClickHandler,
+	classes
+}) => {
 	const onBtnClick = (e) => {
-		console.log("clicked");
 		btnClickHandler(e);
 	};
+
 	return (
 		<button
-			className="btn"
+			className={`btn ${classes}`}
 			onClick={onBtnClick}
 			disabled={isDisabled}
 			style={{ backgroundColor: color }}
 		>
-			{text} {isLoading ? "loading" : ""}
+			{text} {isLoading ? <img src={loading} width="30" alt="loading" /> : ""}
 		</button>
 	);
 };
