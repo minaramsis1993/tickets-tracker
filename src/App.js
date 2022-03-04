@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import { ticketsData } from "./mock/data";
+import { PER_PAGE } from "./constants";
 import AddTicket from "./components/AddTicket";
 import Button from "./components/Button";
 import Header from "./components/Header";
 import Tickets from "./components/Tickets";
-import { ticketsData } from "./mock/data";
 import logo from "./svg/loading.svg";
 
 function App() {
@@ -16,8 +17,8 @@ function App() {
 		// As if data from a server
 		setIsLoading(true);
 		setTimeout(() => {
-			setTickets(ticketsData.slice(0, 5));
-			setEdge(edge + 5);
+			setTickets(ticketsData.slice(0, PER_PAGE));
+			setEdge(edge + PER_PAGE);
 			setIsLoading(false);
 		}, 1000);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
@@ -44,9 +45,9 @@ function App() {
 		setTimeout(() => {
 			setTickets((oldTickets) => [
 				...oldTickets,
-				...ticketsData.slice(edge, edge + 5)
+				...ticketsData.slice(edge, edge + PER_PAGE)
 			]);
-			setEdge(edge + 3);
+			setEdge(edge + PER_PAGE);
 			setIsLoading(false);
 		}, 1000);
 	};
@@ -66,6 +67,8 @@ function App() {
 			) : (
 				<Tickets tickets={tickets} deleteTicket={deleteTicket} />
 			)}
+			{/* Of course this should come from backend .. either there is still more tickets to show */}
+			{/* Mocking it up here by this condition */}
 			{tickets.length !== 0 && tickets.length < ticketsData.length && (
 				<Button
 					classes={"btn-block mt-3"}

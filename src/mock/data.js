@@ -161,5 +161,125 @@ export const ticketsData = [
 		status: statuses.COMPLETE,
 		description:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 21,
+		subject: "eveniet quod temporibus",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 22,
+		subject: "sint suscipit perspiciatis velit dolorum",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 23,
+		subject: "fugit voluptas sed molestias voluptatem provident",
+		priority: 2,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 24,
+		subject: "voluptate et itaque vero tempora molestiae",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 25,
+		subject: "adipisci placeat illum aut reiciendis qui",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 26,
+		subject: "eveniet quod temporibus",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 27,
+		subject: "sint suscipit perspiciatis velit dolorum",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 28,
+		subject: "fugit voluptas sed molestias voluptatem provident",
+		priority: 2,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 29,
+		subject: "voluptate et itaque vero tempora molestiae",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 30,
+		subject: "adipisci placeat illum aut reiciendis qui",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 31,
+		subject: "eveniet quod temporibus",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 32,
+		subject: "sint suscipit perspiciatis velit dolorum",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 33,
+		subject: "fugit voluptas sed molestias voluptatem provident",
+		priority: 2,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 34,
+		subject: "voluptate et itaque vero tempora molestiae",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 35,
+		subject: "last subject",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"last description Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	}
 ];

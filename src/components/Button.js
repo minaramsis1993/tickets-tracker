@@ -10,18 +10,14 @@ const Button = ({
 	btnClickHandler,
 	classes
 }) => {
-	const onBtnClick = (e) => {
-		btnClickHandler(e);
-	};
-
 	return (
 		<button
 			className={`btn ${classes}`}
-			onClick={onBtnClick}
+			onClick={() => btnClickHandler()}
 			disabled={isDisabled}
 			style={{ backgroundColor: color }}
 		>
-			{text} {isLoading ? <img src={loading} width="30" alt="loading" /> : ""}
+			{text} {isLoading && <img src={loading} width="27" alt="loading" />}
 		</button>
 	);
 };

@@ -14,10 +14,10 @@ body {
 .container {
 	max-width: 1200px;
 	margin: 1.875rem auto;
-	overflow: auto;
 	border: 1px solid steelblue;
 	padding: 1.875rem;
 	border-radius: 0.3125rem;
+	overflow: auto;
 }
 
 .header {
@@ -28,19 +28,18 @@ body {
 }
 
 .btn {
+	font-family: inherit;
+	font-size: 0.9375rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: #000;
 	color: #fff;
 	border: none;
 	padding: 0.625rem 1.25rem;
-	margin: 1.25rem;
 	border-radius: 0.3rem;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 0.9375rem;
-	font-family: inherit;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .btn:disabled {
@@ -67,10 +66,12 @@ body {
 	padding: 0.625rem 1.25rem;
 	cursor: pointer;
 }
+
 .ticket .priority {
 	display: block;
+	font-size: 0.9rem;
 }
-.ticket .priority,
+
 .ticket span.status,
 .ticket p {
 	font-size: 0.9rem;
@@ -100,12 +101,22 @@ p.description {
 
 .form-control input,
 .form-control textarea {
+	font-family: inherit;
+	font-size: 1.0625rem;
 	width: 100%;
-	height: 2.5rem;
 	margin: 0.3125rem 0;
 	padding: 0.1875rem 0.4375rem;
-	font-size: 1.0625rem;
+}
+
+.form-control input {
+	height: 2.5rem;
+}
+
+.form-control select {
 	font-family: inherit;
+	font-size: 1.1rem;
+	width: 100%;
+	padding: 0.5rem;
 }
 
 .mt-3 {

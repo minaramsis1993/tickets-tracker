@@ -3,3 +3,5 @@ export const statuses = {
 	IN_PROGRESS: "In progress",
 	NOT_STARTED: "Not started"
 };
+
+export const PER_PAGE = 5;
