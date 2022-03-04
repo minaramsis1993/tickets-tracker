@@ -16,8 +16,8 @@ function App() {
 		// As if data from a server
 		setIsLoading(true);
 		setTimeout(() => {
-			setTickets(ticketsData.slice(0, 3));
-			setEdge(edge + 3);
+			setTickets(ticketsData.slice(0, 5));
+			setEdge(edge + 5);
 			setIsLoading(false);
 		}, 1000);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
@@ -44,7 +44,7 @@ function App() {
 		setTimeout(() => {
 			setTickets((oldTickets) => [
 				...oldTickets,
-				...ticketsData.slice(edge, edge + 3)
+				...ticketsData.slice(edge, edge + 5)
 			]);
 			setEdge(edge + 3);
 			setIsLoading(false);
@@ -66,7 +66,7 @@ function App() {
 			) : (
 				<Tickets tickets={tickets} deleteTicket={deleteTicket} />
 			)}
-			{tickets.length !== 0 && tickets.length < ticketsData.length ? (
+			{tickets.length !== 0 && tickets.length < ticketsData.length && (
 				<Button
 					classes={"btn-block mt-3"}
 					isDisabled={isLoading}
@@ -75,8 +75,6 @@ function App() {
 					text="Show more"
 					btnClickHandler={showMoreClickHandler}
 				/>
-			) : (
-				""
 			)}
 		</div>
 	);
