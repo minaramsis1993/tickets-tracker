@@ -30,7 +30,7 @@ function App() {
 
 	const addTicket = (ticket) => {
 		setTickets((prevTickets) => {
-			return [...prevTickets, ticket];
+			return [ticket, ...prevTickets];
 		});
 	};
 

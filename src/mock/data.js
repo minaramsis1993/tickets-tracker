@@ -1,62 +1,165 @@
+import { statuses } from "../constants";
+
 export const ticketsData = [
 	{
 		id: 1,
-		text: "Doctors appointment",
-		day: "Feb 5th at 2:30pm"
+		subject: "Doctors appointment",
+		priority: 1,
+		status: statuses.COMPLETE,
+		description: "Some dummy description"
 	},
 	{
 		id: 2,
-		text: "Meeting at school",
-		day: "Feb 6th at 2:30pm"
+		subject:
+			"sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"uscipit nam nisi quo aperiam aut asperiores eos fugit maiores voluptatibus quia voluptatem quis ullam qui in alias quia est consequatur magni mollitia accusamus ea nisi voluptate dicta"
 	},
 	{
 		id: 3,
-		text: "Food Shopping",
-		day: "Feb 5th at 2:30pm"
+		subject: "qui est esse",
+		priority: 2,
+		status: statuses.NOT_STARTED,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	},
 	{
 		id: 4,
-		text: "Doctors appointment2",
-		day: "Feb 5th at 2:30pm"
+		subject:
+			"sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	},
 	{
 		id: 5,
-		text: "Meeting at school2",
-		day: "Feb 6th at 2:30pm"
+		subject: "eum et est occaecati",
+		priority: 1,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	},
 	{
 		id: 6,
-		text: "Food Shopping2",
-		day: "Feb 5th at 2:30pm"
+		subject: "nesciunt quas odio",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	},
 	{
 		id: 7,
-		text: "Doctors appointment3",
-		day: "Feb 5th at 2:30pm"
+		subject: "dolorem eum magni eos aperiam quia",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	},
 	{
 		id: 8,
-		text: "Meeting at school3",
-		day: "Feb 6th at 2:30pm"
+		subject: "magnam facilis autem",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	},
 	{
 		id: 9,
-		text: "Food Shopping3",
-		day: "Feb 5th at 2:30pm"
+		subject: "dolorem dolore est ipsam",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	},
 	{
 		id: 10,
-		text: "Doctors appointment4",
-		day: "Feb 5th at 2:30pm"
+		subject: "nesciunt iure omnis dolorem tempora et accusantium",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	},
 	{
 		id: 11,
-		text: "Meeting at school4",
-		day: "Feb 6th at 2:30pm"
+		subject: "optio molestias id quia eum",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	},
 	{
 		id: 12,
-		text: "Food Shopping4",
-		day: "Feb 5th at 2:30pm"
+		subject: "et ea vero quia laudantium autem",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 13,
+		subject: "in quibusdam tempore odit est dolorem",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 14,
+		subject: "dolorum ut in voluptas mollitia et saepe quo animi",
+		priority: 1,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 15,
+		subject: "voluptatem eligendi optio",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 16,
+		subject: "eveniet quod temporibus",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 17,
+		subject: "sint suscipit perspiciatis velit dolorum",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 18,
+		subject: "fugit voluptas sed molestias voluptatem provident",
+		priority: 2,
+		status: statuses.IN_PROGRESS,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 19,
+		subject: "voluptate et itaque vero tempora molestiae",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
+	},
+	{
+		id: 20,
+		subject: "adipisci placeat illum aut reiciendis qui",
+		priority: 2,
+		status: statuses.COMPLETE,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, consectetur. Obcaecati facere sit quos nemo aliquid beatae incidunt impedit sint, asperiores, laboriosam accusantium nulla delectus ex inventore, quaerat quasi cumque!"
 	}
 ];

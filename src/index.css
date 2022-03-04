@@ -8,22 +8,23 @@
 
 body {
 	font-family: "Poppins", sans-serif;
+	font-size: 16px;
 }
 
 .container {
 	max-width: 1200px;
-	margin: 30px auto;
+	margin: 1.875rem auto;
 	overflow: auto;
 	border: 1px solid steelblue;
-	padding: 30px;
-	border-radius: 5px;
+	padding: 1.875rem;
+	border-radius: 0.3125rem;
 }
 
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
 }
 
 .btn {
@@ -31,14 +32,15 @@ body {
 	background: #000;
 	color: #fff;
 	border: none;
-	padding: 10px 20px;
-	margin: 5px;
-	border-radius: 5px;
+	padding: 0.625rem 1.25rem;
+	margin: 1.25rem;
+	border-radius: 0.3rem;
 	cursor: pointer;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	font-family: inherit;
 }
+
 .btn:disabled {
 	cursor: not-allowed;
 }
@@ -54,13 +56,26 @@ body {
 .btn-block {
 	display: block;
 	width: 100%;
+	margin: auto;
 }
 
 .ticket {
 	background: #f4f4f4;
-	margin: 5px;
-	padding: 10px 20px;
+	margin: 0.3125rem;
+	padding: 0.625rem 1.25rem;
 	cursor: pointer;
+}
+.ticket .priority {
+	display: block;
+}
+.ticket .priority,
+.ticket span.status,
+.ticket p {
+	font-size: 0.9rem;
+}
+
+p.description {
+	margin-top: 0.2rem;
 }
 
 .ticket h3 {
@@ -70,21 +85,23 @@ body {
 }
 
 .add-form {
-	margin-bottom: 40px;
+	margin-bottom: 2.5rem;
 }
 
 .form-control {
-	margin: 20px 0;
+	margin: 1.25rem 0;
 }
 
 .form-control label {
 	display: block;
 }
 
-.form-control input {
+.form-control input,
+.form-control textarea {
 	width: 100%;
-	height: 40px;
-	margin: 5px;
-	padding: 3px 7px;
-	font-size: 17px;
+	height: 2.5rem;
+	margin: 0.3125rem 0;
+	padding: 0.1875rem 0.4375rem;
+	font-size: 1.0625rem;
+	font-family: inherit;
 }

@@ -1,50 +1,52 @@
 import React, { useState } from "react";
+import { statuses } from "../constants";
 
 const AddTicket = ({ addTask, len }) => {
-	const [text, setText] = useState("");
-	const [dayTime, setDayTime] = useState("");
+	const [subject, setSubject] = useState("");
+	const [description, setDescription] = useState("");
 
 	const submitHandler = (e) => {
 		e.preventDefault();
-		if (!text.length || !dayTime.length) {
-			alert("Please add text & dayTime");
+		if (!subject.length || !description.length) {
+			alert("Please add subject & description");
 			return;
 		}
 
 		addTask({
 			id: len,
-			text,
-			day: dayTime
+			subject,
+			description,
+			priority: 1,
+			status: statuses.NOT_STARTED
 		});
 
 		// Resetting state
-		setText("");
-		setDayTime("");
+		setSubject("");
+		setDescription("");
 	};
 
 	return (
 		<form className="add-form" onSubmit={submitHandler}>
 			<div className="form-control">
-				<label htmlFor="ticket">Ticket</label>
+				<label htmlFor="subject">Ticket</label>
 				<input
 					type="text"
-					placeholder="Add ticket"
-					id="ticket"
-					value={text}
-					onChange={(e) => setText(e.target.value)}
+					placeholder="Add subject"
+					id="subject"
+					value={subject}
+					onChange={(e) => setSubject(e.target.value)}
 				/>
 			</div>
 			<div className="form-control">
-				<label htmlFor="day-time">Day & Time</label>
-				<input
-					type="text"
-					placeholder="Add Day & Time"
-					id="day-time"
-					value={dayTime}
-					onChange={(e) => setDayTime(e.target.value)}
-				/>
+				<label htmlFor="description">Description</label>
+				<textarea
+					placeholder="Add description"
+					id="description"
+					value={description}
+					onChange={(e) => setDescription(e.target.value)}
+				></textarea>
 			</div>
-			<input type="submit" value="Save Task" className="btn btn-block" />
+			<input type="submit" value="Save Ticket" className="btn btn-block" />
 		</form>
 	);
 };
